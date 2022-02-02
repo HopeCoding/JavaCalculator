@@ -12,33 +12,34 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:layout_marginBottom="35dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="1.Sayıyı giriniz"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/secondText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/secondText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="2.Sayıyı Giriniz"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned|number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/firstText"
-        app:layout_constraintTop_toBottomOf="@+id/firstText"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/firstText" />
 
     <TextView
         android:id="@+id/resultText"
         android:layout_width="216dp"
         android:layout_height="0dp"
         android:layout_marginBottom="195dp"
+        android:inputType="numberSigned|number"
         android:text="Sonuç:"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
