@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="1.Sayıyı giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/secondText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="2.Sayıyı Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/firstText"
+        app:layout_constraintTop_toBottomOf="@+id/firstText"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="195dp"
+        android:text="Sonuç:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondText">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#00FBE4"
+            android:onClick="topla"
+            android:text="Topla"
+            android:textSize="11sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#00FBE4"
+            android:onClick="cikar"
+            android:text="Çıkar"
+            android:textSize="11sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#00FBE4"
+            android:onClick="carp"
+            android:text="Çarp"
+            android:textSize="11sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#00FBE4"
+            android:onClick="bolme"
+            android:text="Böl"
+            android:textSize="11sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
